@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "FybmM31uh00=",
+  "success": true,
+  "projectFilePath": "D:\\gitdemo\\FurionDemo\\framework\\Furion.Extras.ObjectMapper.Mapster\\Furion.Extras.ObjectMapper.Mapster.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\AnDequan\\.nuget\\packages\\mapster\\7.4.0\\mapster.7.4.0.nupkg.sha512",
+    "C:\\Users\\AnDequan\\.nuget\\packages\\mapster.core\\1.2.1\\mapster.core.1.2.1.nupkg.sha512",
+    "C:\\Users\\AnDequan\\.nuget\\packages\\mapster.dependencyinjection\\1.0.1\\mapster.dependencyinjection.1.0.1.nupkg.sha512",
+    "C:\\Users\\AnDequan\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\AnDequan\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.0\\microsoft.extensions.dependencyinjection.abstractions.9.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

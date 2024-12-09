@@ -1,0 +1,14 @@
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DatabaseAccessor.MongoDB\bin\Debug\net9.0\Furion.Extras.DatabaseAccessor.MongoDB.deps.json
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DatabaseAccessor.MongoDB\bin\Debug\net9.0\Furion.Extras.DatabaseAccessor.MongoDB.dll
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DatabaseAccessor.MongoDB\bin\Debug\net9.0\Furion.Extras.DatabaseAccessor.MongoDB.pdb
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DatabaseAccessor.MongoDB\bin\Debug\net9.0\Furion.Extras.DatabaseAccessor.MongoDB.xml
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DatabaseAccessor.MongoDB\obj\Debug\net9.0\Furion.Extras.DatabaseAccessor.MongoDB.csproj.AssemblyReference.cache
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DatabaseAccessor.MongoDB\obj\Debug\net9.0\Furion.Extras.DatabaseAccessor.MongoDB.GeneratedMSBuildEditorConfig.editorconfig
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DatabaseAccessor.MongoDB\obj\Debug\net9.0\Furion.Extras.DatabaseAccessor.MongoDB.AssemblyInfoInputs.cache
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DatabaseAccessor.MongoDB\obj\Debug\net9.0\Furion.Extras.DatabaseAccessor.MongoDB.AssemblyInfo.cs
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DatabaseAccessor.MongoDB\obj\Debug\net9.0\Furion.Extras.DatabaseAccessor.MongoDB.csproj.CoreCompileInputs.cache
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DatabaseAccessor.MongoDB\obj\Debug\net9.0\Furion.Extras.DatabaseAccessor.MongoDB.sourcelink.json
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DatabaseAccessor.MongoDB\obj\Debug\net9.0\Furion.Extras.DatabaseAccessor.MongoDB.dll
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DatabaseAccessor.MongoDB\obj\Debug\net9.0\refint\Furion.Extras.DatabaseAccessor.MongoDB.dll
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DatabaseAccessor.MongoDB\obj\Debug\net9.0\Furion.Extras.DatabaseAccessor.MongoDB.pdb
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DatabaseAccessor.MongoDB\obj\Debug\net9.0\ref\Furion.Extras.DatabaseAccessor.MongoDB.dll

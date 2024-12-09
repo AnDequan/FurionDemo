@@ -1,0 +1,1010 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Furion.Extras.DatabaseAccessor.MongoDB</name>
+    </assembly>
+    <members>
+        <member name="T:MongoDB.Driver.IMongoDBEntity`1">
+            <summary>
+            带实体主键的父 MongoDbEntity
+            </summary>
+        </member>
+        <member name="P:MongoDB.Driver.IMongoDBEntity`1.Id">
+            <summary>
+            主键Id
+            </summary>
+        </member>
+        <member name="T:MongoDB.Driver.IAsyncCursorSourceExtensions">
+            <summary>
+            MongoDB 拓展方法
+            </summary>
+        </member>
+        <member name="M:MongoDB.Driver.IAsyncCursorSourceExtensions.FirstOrDefault``2(MongoDB.Driver.IFindFluent{``0,``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+            <summary>
+            查找第一个
+            </summary>
+            <typeparam name="TDocument"></typeparam>
+            <typeparam name="TNewProjection"></typeparam>
+            <param name="entities"></param>
+            <param name="projection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IAsyncCursorSourceExtensions.FirstOrDefaultAsync``2(MongoDB.Driver.IFindFluent{``0,``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+            <summary>
+            查找第一个
+            </summary>
+            <typeparam name="TDocument"></typeparam>
+            <typeparam name="TNewProjection"></typeparam>
+            <param name="entities"></param>
+            <param name="projection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IAsyncCursorSourceExtensions.ToList``2(MongoDB.Driver.IFindFluent{``0,``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+            <summary>
+            ToList
+            </summary>
+            <typeparam name="TDocument"></typeparam>
+            <typeparam name="TNewProjection"></typeparam>
+            <param name="entities"></param>
+            <param name="projection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IAsyncCursorSourceExtensions.ToListAsync``2(MongoDB.Driver.IFindFluent{``0,``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+            <summary>
+            ToListAsync
+            </summary>
+            <typeparam name="TDocument"></typeparam>
+            <typeparam name="TNewProjection"></typeparam>
+            <param name="entities"></param>
+            <param name="projection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IAsyncCursorSourceExtensions.ToPagedList``1(MongoDB.Driver.IFindFluent{``0,``0},System.Int32,System.Int32)">
+            <summary>
+            分页拓展
+            </summary>
+            <typeparam name="TDocument"></typeparam>
+            <param name="entities"></param>
+            <param name="pageIndex">页码，必须大于0</param>
+            <param name="pageSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IAsyncCursorSourceExtensions.ToPagedList``2(MongoDB.Driver.IFindFluent{``0,``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.Int32)">
+            <summary>
+            分页拓展
+            </summary>
+            <typeparam name="TDocument"></typeparam>
+            <typeparam name="TNewProjection"></typeparam>
+            <param name="entities"></param>
+            <param name="projection"></param>
+            <param name="pageIndex">页码，必须大于0</param>
+            <param name="pageSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IAsyncCursorSourceExtensions.ToPagedListAsync``1(MongoDB.Driver.IFindFluent{``0,``0},System.Int32,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            分页拓展
+            </summary>
+            <typeparam name="TDocument"></typeparam>
+            <param name="entities"></param>
+            <param name="pageIndex">页码，必须大于0</param>
+            <param name="pageSize"></param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IAsyncCursorSourceExtensions.ToPagedListAsync``2(MongoDB.Driver.IFindFluent{``0,``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Int32,System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            分页拓展
+            </summary>
+            <typeparam name="TDocument"></typeparam>
+            <typeparam name="TNewProjection"></typeparam>
+            <param name="entities"></param>
+            <param name="projection"></param>
+            <param name="pageIndex">页码，必须大于0</param>
+            <param name="pageSize"></param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MongoDB.Driver.IMongoDBRepository">
+            <summary>
+            MongoDB 仓储
+            </summary>
+        </member>
+        <member name="P:MongoDB.Driver.IMongoDBRepository.Context">
+            <summary>
+            连接上下文
+            </summary>
+        </member>
+        <member name="P:MongoDB.Driver.IMongoDBRepository.DynamicContext">
+            <summary>
+            动态连接上下文
+            </summary>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository.GetDatabase(System.String,MongoDB.Driver.MongoDatabaseSettings)">
+            <summary>
+            获取数据库
+            </summary>
+            <param name="name"></param>
+            <param name="settings"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository.Change``2">
+            <summary>
+            切换仓储
+            </summary>
+            <typeparam name="TDocument">实体类型</typeparam>
+            <typeparam name="TKey">主键类型</typeparam>
+            <returns>仓储</returns>
+        </member>
+        <member name="T:MongoDB.Driver.IMongoDBRepository`2">
+            <summary>
+            MongoDB 泛型仓储
+            </summary>
+            <typeparam name="TDocument"></typeparam>
+            <typeparam name="TKey"></typeparam>
+        </member>
+        <member name="P:MongoDB.Driver.IMongoDBRepository`2.Entities">
+            <summary>
+            文档集合
+            </summary>
+        </member>
+        <member name="P:MongoDB.Driver.IMongoDBRepository`2.Context">
+            <summary>
+            连接上下文
+            </summary>
+        </member>
+        <member name="P:MongoDB.Driver.IMongoDBRepository`2.DynamicContext">
+            <summary>
+            动态连接上下文
+            </summary>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.Exists(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            判断是否存在
+            </summary>
+            <param name="predicate">条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.ExistsAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            判断是否存在
+            </summary>
+            <param name="predicate">条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.Count">
+            <summary>
+            获取记录数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.CountAsync">
+            <summary>
+            异步获取记录数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.Count(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            获取记录数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.CountAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            异步获取记录数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.Count(MongoDB.Driver.FilterDefinition{`0})">
+            <summary>
+            获取记录数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.CountAsync(MongoDB.Driver.FilterDefinition{`0})">
+            <summary>
+            异步获取记录数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.Get(`1)">
+            <summary>
+            获取单个对象
+            </summary>
+            <param name="id">objectId</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.Get(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            获取单个对象
+            </summary>
+            <param name="expression">筛选条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.Get(MongoDB.Driver.FilterDefinition{`0})">
+            <summary>
+            获取单个对象
+            </summary>
+            <param name="filter">过滤器</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.GetAsync(`1)">
+            <summary>
+            异步获取单个对象
+            </summary>
+            <param name="id">objectId</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.GetAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            异步获取单个对象
+            </summary>
+            <param name="expression">筛选条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.GetAsync(MongoDB.Driver.FilterDefinition{`0})">
+            <summary>
+            异步获取单个对象
+            </summary>
+            <param name="filter">过滤器</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.Insert(`0)">
+            <summary>
+            插入
+            </summary>
+            <param name="value">对象</param>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.InsertAsync(`0)">
+            <summary>
+            异步插入
+            </summary>
+            <param name="value">对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.BatchInsert(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            批量插入
+            </summary>
+            <param name="values">对象集合</param>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.BatchInsertAsync(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            异步批量插入
+            </summary>
+            <param name="values">对象集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.Update(`1,MongoDB.Driver.UpdateDefinition{`0})">
+            <summary>
+            局部更新
+            </summary>
+            <param name="id">记录ID</param>
+            <param name="update">更新条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.UpdateAsync(`1,MongoDB.Driver.UpdateDefinition{`0})">
+            <summary>
+            局部更新
+            </summary>
+            <param name="id">记录ID</param>
+            <param name="update">更新条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.Update(MongoDB.Driver.FilterDefinition{`0},MongoDB.Driver.UpdateDefinition{`0})">
+            <summary>
+            局部更新
+            </summary>
+            <param name="filter">过滤器</param>
+            <param name="update">更新条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.UpdateAsync(MongoDB.Driver.FilterDefinition{`0},MongoDB.Driver.UpdateDefinition{`0})">
+            <summary>
+            异步局部更新（仅更新一条记录）
+            </summary>
+            <param name="filter">过滤器</param>
+            <param name="update">更新条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.Update(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},MongoDB.Driver.UpdateDefinition{`0})">
+            <summary>
+            局部更新（仅更新一条记录）
+            </summary>
+            <param name="expression">筛选条件</param>
+            <param name="update">更新条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.UpdateAsync``1(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},MongoDB.Driver.UpdateDefinition{`0})">
+            <summary>
+            异步局部更新（仅更新一条记录）
+            </summary>
+            <param name="expression">筛选条件</param>
+            <param name="update">更新条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.UpdateMany(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},MongoDB.Driver.UpdateDefinition{`0})">
+            <summary>
+            局部更新（更新多条记录）
+            </summary>
+            <param name="expression">筛选条件</param>
+            <param name="update">更新条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.UpdateManyAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},MongoDB.Driver.UpdateDefinition{`0})">
+            <summary>
+            异步局部更新（更新多条记录）
+            </summary>
+            <param name="expression">筛选条件</param>
+            <param name="update">更新条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.Update(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Action{`0}})">
+            <summary>
+            局部更新（仅更新一条记录）
+            <para><![CDATA[expression 参数示例：x => x.Id == 1 && x.Age > 18 && x.Gender == 0]]></para>
+            <para><![CDATA[entity 参数示例：y => new T{ RealName = "Ray", Gender = 1}]]></para>
+            </summary>
+            <param name="expression">筛选条件</param>
+            <param name="entity">更新条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.UpdateAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Action{`0}})">
+            <summary>
+            异步局部更新（仅更新一条记录）
+            <para><![CDATA[expression 参数示例：x => x.Id == 1 && x.Age > 18 && x.Gender == 0]]></para>
+            <para><![CDATA[entity 参数示例：y => new T{ RealName = "Ray", Gender = 1}]]></para>
+            </summary>
+            <param name="expression">筛选条件</param>
+            <param name="entity">更新条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.Update(`0)">
+            <summary>
+            覆盖更新
+            </summary>
+            <param name="value">对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.UpdateAsync(`0)">
+            <summary>
+            异步覆盖更新
+            </summary>
+            <param name="value">对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.Delete(`1)">
+            <summary>
+            删除指定对象
+            </summary>
+            <param name="id">对象Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.DeleteAsync(`1)">
+            <summary>
+            异步删除指定对象
+            </summary>
+            <param name="id">对象Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.Delete(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            删除指定对象
+            </summary>
+            <param name="expression">查询条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.DeleteAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            异步删除指定对象
+            </summary>
+            <param name="expression">查询条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.BatchDelete(System.Collections.Generic.IEnumerable{MongoDB.Bson.ObjectId})">
+            <summary>
+            批量删除对象
+            </summary>
+            <param name="ids">ID集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.BatchDeleteAsync(System.Collections.Generic.IEnumerable{MongoDB.Bson.ObjectId})">
+            <summary>
+            异步批量删除对象
+            </summary>
+            <param name="ids">ID集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.BatchDelete(MongoDB.Driver.FilterDefinition{`0})">
+            <summary>
+            批量删除对象
+            </summary>
+            <param name="filter">过滤器</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.BatchDeleteAsync(MongoDB.Driver.FilterDefinition{`0})">
+            <summary>
+            异步批量删除对象
+            </summary>
+            <param name="filter">过滤器</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.BatchDelete(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            批量删除对象
+            </summary>
+            <param name="expression">筛选条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.BatchDeleteAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            异步批量删除对象
+            </summary>
+            <param name="expression">筛选条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.Change``2">
+            <summary>
+            切换仓储
+            </summary>
+            <typeparam name="TChangeEntity">实体类型</typeparam>
+            <typeparam name="TChangeKey">主键类型</typeparam>
+            <returns>仓储</returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.Where(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            根据表达式查询多条记录
+            </summary>
+            <param name="predicate">筛选条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.AsQueryable">
+            <summary>
+            构建查询分析器
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.AsQueryable(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            构建查询分析器
+            </summary>
+            <param name="predicate">筛选条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.AsEnumerable">
+            <summary>
+            直接返回数据库结果
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.AsAsyncEnumerable">
+            <summary>
+            直接返回数据库结果
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.AsEnumerable(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            直接返回数据库结果
+            </summary>
+            <param name="predicate">筛选条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.IMongoDBRepository`2.AsAsyncEnumerable(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            直接返回数据库结果
+            </summary>
+            <param name="predicate">筛选条件</param>
+            <returns></returns>
+        </member>
+        <member name="T:MongoDB.Driver.IMongoDBRepository`1">
+            <summary>
+            MongoDB 泛型仓储
+            </summary>
+            <typeparam name="TDocument"></typeparam>
+        </member>
+        <member name="T:MongoDB.Driver.MongoDBRepository">
+            <summary>
+            MongoDB 仓储
+            </summary>
+        </member>
+        <member name="F:MongoDB.Driver.MongoDBRepository._serviceProvider">
+            <summary>
+            服务提供器
+            </summary>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository.#ctor(System.IServiceProvider,MongoDB.Driver.IMongoDatabase)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="serviceProvider">服务提供器</param>
+            <param name="db"></param>
+        </member>
+        <member name="P:MongoDB.Driver.MongoDBRepository.Context">
+            <summary>
+            数据库上下文
+            </summary>
+        </member>
+        <member name="P:MongoDB.Driver.MongoDBRepository.DynamicContext">
+            <summary>
+            动态数据库上下文
+            </summary>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository.GetDatabase(System.String,MongoDB.Driver.MongoDatabaseSettings)">
+            <summary>
+            获取数据库
+            </summary>
+            <param name="name"></param>
+            <param name="settings"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository.Change``2">
+            <summary>
+            切换仓储
+            </summary>
+            <typeparam name="TDocument">实体类型</typeparam>
+            <typeparam name="TKey">主键类型</typeparam>
+            <returns>仓储</returns>
+        </member>
+        <member name="T:MongoDB.Driver.MongoDBRepository`2">
+            <summary>
+            MongoDB 泛型仓储
+            </summary>
+            <typeparam name="TDocument"></typeparam>
+            <typeparam name="TKey"></typeparam>
+        </member>
+        <member name="F:MongoDB.Driver.MongoDBRepository`2._mongoDBRepository">
+            <summary>
+            非泛型 MongoDB 仓储
+            </summary>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.#ctor(MongoDB.Driver.IMongoDBRepository,MongoDB.Driver.IMongoDatabase)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="mongoDBRepository"></param>
+            <param name="db"></param>
+        </member>
+        <member name="P:MongoDB.Driver.MongoDBRepository`2.Entities">
+            <summary>
+            文档集合
+            </summary>
+        </member>
+        <member name="P:MongoDB.Driver.MongoDBRepository`2.Context">
+            <summary>
+            数据库上下文
+            </summary>
+        </member>
+        <member name="P:MongoDB.Driver.MongoDBRepository`2.DynamicContext">
+            <summary>
+            动态数据库上下文
+            </summary>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.Where(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            根据表达式查询多条记录
+            </summary>
+            <param name="predicate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.AsQueryable">
+            <summary>
+            构建查询分析器
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.AsQueryable(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            构建查询分析器
+            </summary>
+            <param name="predicate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.AsEnumerable">
+            <summary>
+            直接返回数据库结果
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.AsEnumerable(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            直接返回数据库结果
+            </summary>
+            <param name="predicate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.AsAsyncEnumerable">
+            <summary>
+            直接返回数据库结果
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.AsAsyncEnumerable(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            直接返回数据库结果
+            </summary>
+            <param name="predicate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.Exists(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            判断是否存在
+            </summary>
+            <param name="predicate">条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.ExistsAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            判断是否存在
+            </summary>
+            <param name="predicate">条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.Count">
+            <summary>
+            获取记录数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.Count(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            获取记录数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.Count(MongoDB.Driver.FilterDefinition{`0})">
+            <summary>
+            获取记录数
+            </summary>
+            <param name="filter">过滤器</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.CountAsync">
+            <summary>
+            获取记录数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.CountAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            获取记录数
+            </summary>
+            <param name="expression">筛选条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.CountAsync(MongoDB.Driver.FilterDefinition{`0})">
+            <summary>
+            获取记录数
+            </summary>
+            <param name="filter">过滤器</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.Get(`1)">
+            <summary>
+            获取单个对象
+            </summary>
+            <param name="id">objectId</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.Get(MongoDB.Driver.FilterDefinition{`0})">
+            <summary>
+            获取单个对象
+            </summary>
+            <param name="filter">过滤器</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.Get(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            获取单个对象
+            </summary>
+            <param name="predicate">筛选条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.GetAsync(`1)">
+            <summary>
+            异步获取单个对象
+            </summary>
+            <param name="id">objectId</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.GetAsync(MongoDB.Driver.FilterDefinition{`0})">
+            <summary>
+            异步获取单个对象
+            </summary>
+            <param name="filter">过滤器</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.GetAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            异步获取单个对象
+            </summary>
+            <param name="predicate">筛选条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.Insert(`0)">
+            <summary>
+            插入
+            </summary>
+            <param name="value">对象</param>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.InsertAsync(`0)">
+            <summary>
+            异步插入
+            </summary>
+            <param name="value">对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.BatchInsert(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            批量插入
+            </summary>
+            <param name="values">对象集合</param>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.BatchInsertAsync(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            异步批量插入
+            </summary>
+            <param name="values">对象集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.Update(`0)">
+            <summary>
+            覆盖更新
+            </summary>
+            <param name="value">对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.Update(`1,MongoDB.Driver.UpdateDefinition{`0})">
+            <summary>
+            局部更新
+            </summary>
+            <param name="id">记录ID</param>
+            <param name="update">更新条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.UpdateAsync(`1,MongoDB.Driver.UpdateDefinition{`0})">
+            <summary>
+            局部更新
+            </summary>
+            <param name="id">记录ID</param>
+            <param name="update">更新条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.Update(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},MongoDB.Driver.UpdateDefinition{`0})">
+            <summary>
+            局部更新
+            </summary>
+            <param name="expression">筛选条件</param>
+            <param name="update">更新条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.UpdateMany(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},MongoDB.Driver.UpdateDefinition{`0})">
+            <summary>
+            局部更新
+            </summary>
+            <param name="expression">筛选条件</param>
+            <param name="update">更新条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.Update(MongoDB.Driver.FilterDefinition{`0},MongoDB.Driver.UpdateDefinition{`0})">
+            <summary>
+            局部更新
+            </summary>
+            <param name="filter">过滤器</param>
+            <param name="update">更新条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.Update(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Action{`0}})">
+            <summary>
+            异步局部更新（仅更新一条记录）
+            <para><![CDATA[expression 参数示例：x => x.Id == 1 && x.Age > 18 && x.Gender == 0]]></para>
+            <para><![CDATA[entity 参数示例：y => new T{ RealName = "Ray", Gender = 1}]]></para>
+            </summary>
+            <param name="expression">筛选条件</param>
+            <param name="entity">更新条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.UpdateAsync(MongoDB.Driver.FilterDefinition{`0},MongoDB.Driver.UpdateDefinition{`0})">
+            <summary>
+            异步局部更新（仅更新一条记录）
+            </summary>
+            <param name="filter">过滤器</param>
+            <param name="update">更新条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.UpdateAsync``1(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},MongoDB.Driver.UpdateDefinition{`0})">
+            <summary>
+            异步局部更新（仅更新一条记录）
+            </summary>
+            <param name="expression">筛选条件</param>
+            <param name="update">更新条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.UpdateManyAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},MongoDB.Driver.UpdateDefinition{`0})">
+            <summary>
+            异步局部更新（仅更新多条记录）
+            </summary>
+            <param name="expression">筛选条件</param>
+            <param name="update">更新条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.UpdateAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Action{`0}})">
+            <summary>
+            异步局部更新（仅更新一条记录）
+            </summary>
+            <param name="expression">筛选条件</param>
+            <param name="entity">更新条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.UpdateAsync(`0)">
+            <summary>
+            异步覆盖更新
+            </summary>
+            <param name="value">对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.Delete(`1)">
+            <summary>
+            删除指定对象
+            </summary>
+            <param name="id">对象Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.Delete(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            删除指定对象
+            </summary>
+            <param name="expression">查询条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.DeleteAsync(`1)">
+            <summary>
+            异步删除指定对象
+            </summary>
+            <param name="id">对象Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.DeleteAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            异步删除指定对象
+            </summary>
+            <param name="expression">查询条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.BatchDelete(System.Collections.Generic.IEnumerable{MongoDB.Bson.ObjectId})">
+            <summary>
+            批量删除对象
+            </summary>
+            <param name="ids">ID集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.BatchDelete(MongoDB.Driver.FilterDefinition{`0})">
+            <summary>
+            批量删除对象
+            </summary>
+            <param name="filter">过滤器</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.BatchDelete(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            批量删除对象
+            </summary>
+            <param name="expression">筛选条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.BatchDeleteAsync(System.Collections.Generic.IEnumerable{MongoDB.Bson.ObjectId})">
+            <summary>
+            异步批量删除对象
+            </summary>
+            <param name="ids">ID集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.BatchDeleteAsync(MongoDB.Driver.FilterDefinition{`0})">
+            <summary>
+            异步批量删除对象
+            </summary>
+            <param name="filter">过滤器</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.BatchDeleteAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            异步批量删除对象
+            </summary>
+            <param name="expression">筛选条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`2.Change``2">
+            <summary>
+            切换仓储
+            </summary>
+            <typeparam name="TChangeEntity">实体类型</typeparam>
+            <typeparam name="TChangeKey">主键类型</typeparam>
+            <returns>仓储</returns>
+        </member>
+        <member name="T:MongoDB.Driver.MongoDBRepository`1">
+            <summary>
+            MongoDB 泛型仓储
+            </summary>
+            <typeparam name="TDocument"></typeparam>
+        </member>
+        <member name="M:MongoDB.Driver.MongoDBRepository`1.#ctor(MongoDB.Driver.IMongoDBRepository,MongoDB.Driver.IMongoDatabase)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="mongoDBRepository"></param>
+            <param name="db"></param>
+        </member>
+        <member name="T:Microsoft.Extensions.DependencyInjection.MongoDBServiceCollectionExtensions">
+            <summary>
+            MongoDB 拓展类
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.MongoDBServiceCollectionExtensions.AddMongoDB(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String)">
+            <summary>
+            添加 MongoDB 拓展
+            </summary>
+            <param name="services"></param>
+            <param name="connectionString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.MongoDBServiceCollectionExtensions.AddMongoDB(Microsoft.Extensions.DependencyInjection.IServiceCollection,MongoDB.Driver.MongoClientSettings,System.String)">
+            <summary>
+            添加 MongoDB 拓展
+            </summary>
+            <param name="services"></param>
+            <param name="settings"></param>
+            <param name="dbName">数据库名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.MongoDBServiceCollectionExtensions.AddMongoDB(Microsoft.Extensions.DependencyInjection.IServiceCollection,MongoDB.Driver.MongoUrl)">
+            <summary>
+            添加 MongoDB 拓展
+            </summary>
+            <param name="services"></param>
+            <param name="url"></param>
+            <returns></returns>
+        </member>
+        <member name="T:System.Collections.Generic.MongoDBPagedList`1">
+            <summary>
+            分页泛型集合
+            </summary>
+            <typeparam name="TEntity"> </typeparam>
+        </member>
+        <member name="P:System.Collections.Generic.MongoDBPagedList`1.PageIndex">
+            <summary>
+            页码
+            </summary>
+        </member>
+        <member name="P:System.Collections.Generic.MongoDBPagedList`1.PageSize">
+            <summary>
+            页容量
+            </summary>
+        </member>
+        <member name="P:System.Collections.Generic.MongoDBPagedList`1.TotalCount">
+            <summary>
+            总条数
+            </summary>
+        </member>
+        <member name="P:System.Collections.Generic.MongoDBPagedList`1.TotalPages">
+            <summary>
+            总页数
+            </summary>
+        </member>
+        <member name="P:System.Collections.Generic.MongoDBPagedList`1.Items">
+            <summary>
+            当前页集合
+            </summary>
+        </member>
+        <member name="P:System.Collections.Generic.MongoDBPagedList`1.HasPrevPages">
+            <summary>
+            是否有上一页
+            </summary>
+        </member>
+        <member name="P:System.Collections.Generic.MongoDBPagedList`1.HasNextPages">
+            <summary>
+            是否有下一页
+            </summary>
+        </member>
+    </members>
+</doc>

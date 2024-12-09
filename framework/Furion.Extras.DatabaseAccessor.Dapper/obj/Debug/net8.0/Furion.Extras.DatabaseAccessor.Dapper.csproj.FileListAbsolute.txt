@@ -1,0 +1,14 @@
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DatabaseAccessor.Dapper\bin\Debug\net8.0\Furion.Extras.DatabaseAccessor.Dapper.deps.json
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DatabaseAccessor.Dapper\bin\Debug\net8.0\Furion.Extras.DatabaseAccessor.Dapper.dll
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DatabaseAccessor.Dapper\bin\Debug\net8.0\Furion.Extras.DatabaseAccessor.Dapper.pdb
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DatabaseAccessor.Dapper\bin\Debug\net8.0\Furion.Extras.DatabaseAccessor.Dapper.xml
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DatabaseAccessor.Dapper\obj\Debug\net8.0\Furion.Extras.DatabaseAccessor.Dapper.csproj.AssemblyReference.cache
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DatabaseAccessor.Dapper\obj\Debug\net8.0\Furion.Extras.DatabaseAccessor.Dapper.GeneratedMSBuildEditorConfig.editorconfig
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DatabaseAccessor.Dapper\obj\Debug\net8.0\Furion.Extras.DatabaseAccessor.Dapper.AssemblyInfoInputs.cache
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DatabaseAccessor.Dapper\obj\Debug\net8.0\Furion.Extras.DatabaseAccessor.Dapper.AssemblyInfo.cs
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DatabaseAccessor.Dapper\obj\Debug\net8.0\Furion.Extras.DatabaseAccessor.Dapper.csproj.CoreCompileInputs.cache
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DatabaseAccessor.Dapper\obj\Debug\net8.0\Furion.Extras.DatabaseAccessor.Dapper.sourcelink.json
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DatabaseAccessor.Dapper\obj\Debug\net8.0\Furion.Extras.DatabaseAccessor.Dapper.dll
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DatabaseAccessor.Dapper\obj\Debug\net8.0\refint\Furion.Extras.DatabaseAccessor.Dapper.dll
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DatabaseAccessor.Dapper\obj\Debug\net8.0\Furion.Extras.DatabaseAccessor.Dapper.pdb
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DatabaseAccessor.Dapper\obj\Debug\net8.0\ref\Furion.Extras.DatabaseAccessor.Dapper.dll

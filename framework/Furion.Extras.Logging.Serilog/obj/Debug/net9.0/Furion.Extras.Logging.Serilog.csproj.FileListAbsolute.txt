@@ -1,0 +1,14 @@
+D:\gitdemo\FurionDemo\framework\Furion.Extras.Logging.Serilog\bin\Debug\net9.0\Furion.Extras.Logging.Serilog.deps.json
+D:\gitdemo\FurionDemo\framework\Furion.Extras.Logging.Serilog\bin\Debug\net9.0\Furion.Extras.Logging.Serilog.dll
+D:\gitdemo\FurionDemo\framework\Furion.Extras.Logging.Serilog\bin\Debug\net9.0\Furion.Extras.Logging.Serilog.pdb
+D:\gitdemo\FurionDemo\framework\Furion.Extras.Logging.Serilog\bin\Debug\net9.0\Furion.Extras.Logging.Serilog.xml
+D:\gitdemo\FurionDemo\framework\Furion.Extras.Logging.Serilog\obj\Debug\net9.0\Furion.Extras.Logging.Serilog.csproj.AssemblyReference.cache
+D:\gitdemo\FurionDemo\framework\Furion.Extras.Logging.Serilog\obj\Debug\net9.0\Furion.Extras.Logging.Serilog.GeneratedMSBuildEditorConfig.editorconfig
+D:\gitdemo\FurionDemo\framework\Furion.Extras.Logging.Serilog\obj\Debug\net9.0\Furion.Extras.Logging.Serilog.AssemblyInfoInputs.cache
+D:\gitdemo\FurionDemo\framework\Furion.Extras.Logging.Serilog\obj\Debug\net9.0\Furion.Extras.Logging.Serilog.AssemblyInfo.cs
+D:\gitdemo\FurionDemo\framework\Furion.Extras.Logging.Serilog\obj\Debug\net9.0\Furion.Extras.Logging.Serilog.csproj.CoreCompileInputs.cache
+D:\gitdemo\FurionDemo\framework\Furion.Extras.Logging.Serilog\obj\Debug\net9.0\Furion.Extras.Logging.Serilog.sourcelink.json
+D:\gitdemo\FurionDemo\framework\Furion.Extras.Logging.Serilog\obj\Debug\net9.0\Furion.Extras.Logging.Serilog.dll
+D:\gitdemo\FurionDemo\framework\Furion.Extras.Logging.Serilog\obj\Debug\net9.0\refint\Furion.Extras.Logging.Serilog.dll
+D:\gitdemo\FurionDemo\framework\Furion.Extras.Logging.Serilog\obj\Debug\net9.0\Furion.Extras.Logging.Serilog.pdb
+D:\gitdemo\FurionDemo\framework\Furion.Extras.Logging.Serilog\obj\Debug\net9.0\ref\Furion.Extras.Logging.Serilog.dll

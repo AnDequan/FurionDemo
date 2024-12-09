@@ -1,0 +1,14 @@
+D:\gitdemo\FurionDemo\framework\Furion.Extras.Authentication.JwtBearer\bin\Debug\net8.0\Furion.Extras.Authentication.JwtBearer.deps.json
+D:\gitdemo\FurionDemo\framework\Furion.Extras.Authentication.JwtBearer\bin\Debug\net8.0\Furion.Extras.Authentication.JwtBearer.dll
+D:\gitdemo\FurionDemo\framework\Furion.Extras.Authentication.JwtBearer\bin\Debug\net8.0\Furion.Extras.Authentication.JwtBearer.pdb
+D:\gitdemo\FurionDemo\framework\Furion.Extras.Authentication.JwtBearer\bin\Debug\net8.0\Furion.Extras.Authentication.JwtBearer.xml
+D:\gitdemo\FurionDemo\framework\Furion.Extras.Authentication.JwtBearer\obj\Debug\net8.0\Furion.Extras.Authentication.JwtBearer.csproj.AssemblyReference.cache
+D:\gitdemo\FurionDemo\framework\Furion.Extras.Authentication.JwtBearer\obj\Debug\net8.0\Furion.Extras.Authentication.JwtBearer.GeneratedMSBuildEditorConfig.editorconfig
+D:\gitdemo\FurionDemo\framework\Furion.Extras.Authentication.JwtBearer\obj\Debug\net8.0\Furion.Extras.Authentication.JwtBearer.AssemblyInfoInputs.cache
+D:\gitdemo\FurionDemo\framework\Furion.Extras.Authentication.JwtBearer\obj\Debug\net8.0\Furion.Extras.Authentication.JwtBearer.AssemblyInfo.cs
+D:\gitdemo\FurionDemo\framework\Furion.Extras.Authentication.JwtBearer\obj\Debug\net8.0\Furion.Extras.Authentication.JwtBearer.csproj.CoreCompileInputs.cache
+D:\gitdemo\FurionDemo\framework\Furion.Extras.Authentication.JwtBearer\obj\Debug\net8.0\Furion.Extras.Authentication.JwtBearer.sourcelink.json
+D:\gitdemo\FurionDemo\framework\Furion.Extras.Authentication.JwtBearer\obj\Debug\net8.0\Furion.Extras.Authentication.JwtBearer.dll
+D:\gitdemo\FurionDemo\framework\Furion.Extras.Authentication.JwtBearer\obj\Debug\net8.0\refint\Furion.Extras.Authentication.JwtBearer.dll
+D:\gitdemo\FurionDemo\framework\Furion.Extras.Authentication.JwtBearer\obj\Debug\net8.0\Furion.Extras.Authentication.JwtBearer.pdb
+D:\gitdemo\FurionDemo\framework\Furion.Extras.Authentication.JwtBearer\obj\Debug\net8.0\ref\Furion.Extras.Authentication.JwtBearer.dll

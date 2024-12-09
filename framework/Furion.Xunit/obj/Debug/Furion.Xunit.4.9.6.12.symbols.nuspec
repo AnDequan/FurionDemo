@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Furion.Xunit</id>
+    <version>4.9.6.12</version>
+    <authors>百小僧</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <icon>icon.png</icon>
+    <readme>README.md</readme>
+    <projectUrl>https://furion.net/</projectUrl>
+    <description>Furion Xunit 单元测试拓展插件。</description>
+    <copyright>© 2020-2024 百小僧及百签科技（广东）有限公司</copyright>
+    <tags>Furion Fur 百小僧 Monk MonkSoul ASP.NET ASP.NET Core .NET .NET Core Framework dotNET dotNET China Web Cross Platform</tags>
+    <repository type="Gitee" url="https://gitee.com/dotnetchina/Furion" branch="refs/heads/main" commit="80a70f3e8a6ae0d71d145d42a7158fb9e3500789" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="Furion" version="4.9.6.12" exclude="Build,Analyzers" />
+        <dependency id="xunit.extensibility.execution" version="2.9.2" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net9.0">
+        <dependency id="Furion" version="4.9.6.12" exclude="Build,Analyzers" />
+        <dependency id="xunit.extensibility.execution" version="2.9.2" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\gitdemo\FurionDemo\framework\Furion.Xunit\bin\Debug\net8.0\Furion.Xunit.pdb" target="lib\net8.0\Furion.Xunit.pdb" />
+    <file src="D:\gitdemo\FurionDemo\framework\Furion.Xunit\bin\Debug\net9.0\Furion.Xunit.pdb" target="lib\net9.0\Furion.Xunit.pdb" />
+  </files>
+</package>

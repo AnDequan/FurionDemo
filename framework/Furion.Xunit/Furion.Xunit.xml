@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Furion.Xunit</name>
+    </assembly>
+    <members>
+        <member name="T:Furion.Xunit.AssemblyFixtureAttribute">
+            <summary>
+            通过特性方式任何类型
+            </summary>
+        </member>
+        <member name="M:Furion.Xunit.AssemblyFixtureAttribute.#ctor(System.Type)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="fixtureType"></param>
+        </member>
+        <member name="P:Furion.Xunit.AssemblyFixtureAttribute.FixtureType">
+            <summary>
+            单元测试实例构造函数修复类型
+            </summary>
+        </member>
+        <member name="T:Furion.Xunit.TestStartup">
+            <summary>
+            测试配置启动项
+            </summary>
+        </member>
+        <member name="M:Furion.Xunit.TestStartup.#ctor(Xunit.Abstractions.IMessageSink)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="messageSink"></param>
+        </member>
+        <member name="M:Furion.Xunit.TestStartup.CreateExecutor(System.Reflection.AssemblyName)">
+            <summary>
+            创建单元测试框架执行器
+            </summary>
+            <param name="assemblyName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Furion.Xunit.XunitTestAssemblyRunnerWithAssemblyFixture">
+            <summary>
+            单元测试程序集调用器
+            </summary>
+        </member>
+        <member name="M:Furion.Xunit.XunitTestAssemblyRunnerWithAssemblyFixture.#ctor(Xunit.Abstractions.ITestAssembly,System.Collections.Generic.IEnumerable{Xunit.Sdk.IXunitTestCase},Xunit.Abstractions.IMessageSink,Xunit.Abstractions.IMessageSink,Xunit.Abstractions.ITestFrameworkExecutionOptions)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="testAssembly"></param>
+            <param name="testCases"></param>
+            <param name="diagnosticMessageSink"></param>
+            <param name="executionMessageSink"></param>
+            <param name="executionOptions"></param>
+        </member>
+        <member name="M:Furion.Xunit.XunitTestAssemblyRunnerWithAssemblyFixture.AfterTestAssemblyStartingAsync">
+            <summary>
+            单元测试程序集调用时触发
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Furion.Xunit.XunitTestAssemblyRunnerWithAssemblyFixture.BeforeTestAssemblyFinishedAsync">
+            <summary>
+            单元测试程序集销毁时触发
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Furion.Xunit.XunitTestAssemblyRunnerWithAssemblyFixture.RunTestCollectionAsync(Xunit.Sdk.IMessageBus,Xunit.Abstractions.ITestCollection,System.Collections.Generic.IEnumerable{Xunit.Sdk.IXunitTestCase},System.Threading.CancellationTokenSource)">
+            <summary>
+            执行多个测试实例
+            </summary>
+            <param name="messageBus"></param>
+            <param name="testCollection"></param>
+            <param name="testCases"></param>
+            <param name="cancellationTokenSource"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Furion.Xunit.XunitTestCollectionRunnerWithAssemblyFixture">
+            <summary>
+            单元测试多个测试实例调用器
+            </summary>
+        </member>
+        <member name="F:Furion.Xunit.XunitTestCollectionRunnerWithAssemblyFixture.serviceScope">
+            <summary>
+            创建服务作用域
+            </summary>
+        </member>
+        <member name="M:Furion.Xunit.XunitTestCollectionRunnerWithAssemblyFixture.#ctor(System.Collections.Generic.Dictionary{System.Type,System.Object},Xunit.Abstractions.ITestCollection,System.Collections.Generic.IEnumerable{Xunit.Sdk.IXunitTestCase},Xunit.Abstractions.IMessageSink,Xunit.Sdk.IMessageBus,Xunit.Sdk.ITestCaseOrderer,Xunit.Sdk.ExceptionAggregator,System.Threading.CancellationTokenSource)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="assemblyFixtureMappings"></param>
+            <param name="testCollection"></param>
+            <param name="testCases"></param>
+            <param name="diagnosticMessageSink"></param>
+            <param name="messageBus"></param>
+            <param name="testCaseOrderer"></param>
+            <param name="aggregator"></param>
+            <param name="cancellationTokenSource"></param>
+        </member>
+        <member name="M:Furion.Xunit.XunitTestCollectionRunnerWithAssemblyFixture.RunTestClassAsync(Xunit.Abstractions.ITestClass,Xunit.Abstractions.IReflectionTypeInfo,System.Collections.Generic.IEnumerable{Xunit.Sdk.IXunitTestCase})">
+            <summary>
+            单元测试实例测试时触发
+            </summary>
+            <param name="testClass"></param>
+            <param name="class"></param>
+            <param name="testCases"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Furion.Xunit.XunitTestCollectionRunnerWithAssemblyFixture.BeforeTestCollectionFinishedAsync">
+            <summary>
+            单元测试实例销毁时触发
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Furion.Xunit.XunitTestFrameworkExecutorWithAssemblyFixture">
+            <summary>
+            单元测试框架执行器
+            </summary>
+        </member>
+        <member name="M:Furion.Xunit.XunitTestFrameworkExecutorWithAssemblyFixture.#ctor(System.Reflection.AssemblyName,Xunit.Abstractions.ISourceInformationProvider,Xunit.Abstractions.IMessageSink)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="assemblyName"></param>
+            <param name="sourceInformationProvider"></param>
+            <param name="diagnosticMessageSink"></param>
+        </member>
+        <member name="M:Furion.Xunit.XunitTestFrameworkExecutorWithAssemblyFixture.RunTestCases(System.Collections.Generic.IEnumerable{Xunit.Sdk.IXunitTestCase},Xunit.Abstractions.IMessageSink,Xunit.Abstractions.ITestFrameworkExecutionOptions)">
+            <summary>
+            执行测试案例
+            </summary>
+            <param name="testCases"></param>
+            <param name="executionMessageSink"></param>
+            <param name="executionOptions"></param>
+        </member>
+    </members>
+</doc>

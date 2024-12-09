@@ -1,0 +1,14 @@
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DependencyModel.CodeAnalysis\obj\Debug\net8.0\Furion.Extras.DependencyModel.CodeAnalysis.csproj.AssemblyReference.cache
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DependencyModel.CodeAnalysis\obj\Debug\net8.0\Furion.Extras.DependencyModel.CodeAnalysis.GeneratedMSBuildEditorConfig.editorconfig
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DependencyModel.CodeAnalysis\obj\Debug\net8.0\Furion.Extras.DependencyModel.CodeAnalysis.AssemblyInfoInputs.cache
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DependencyModel.CodeAnalysis\obj\Debug\net8.0\Furion.Extras.DependencyModel.CodeAnalysis.AssemblyInfo.cs
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DependencyModel.CodeAnalysis\obj\Debug\net8.0\Furion.Extras.DependencyModel.CodeAnalysis.csproj.CoreCompileInputs.cache
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DependencyModel.CodeAnalysis\obj\Debug\net8.0\Furion.Extras.DependencyModel.CodeAnalysis.sourcelink.json
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DependencyModel.CodeAnalysis\bin\Debug\net8.0\Furion.Extras.DependencyModel.CodeAnalysis.deps.json
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DependencyModel.CodeAnalysis\bin\Debug\net8.0\Furion.Extras.DependencyModel.CodeAnalysis.dll
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DependencyModel.CodeAnalysis\bin\Debug\net8.0\Furion.Extras.DependencyModel.CodeAnalysis.pdb
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DependencyModel.CodeAnalysis\bin\Debug\net8.0\Furion.Extras.DependencyModel.CodeAnalysis.xml
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DependencyModel.CodeAnalysis\obj\Debug\net8.0\Furion.Extras.DependencyModel.CodeAnalysis.dll
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DependencyModel.CodeAnalysis\obj\Debug\net8.0\refint\Furion.Extras.DependencyModel.CodeAnalysis.dll
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DependencyModel.CodeAnalysis\obj\Debug\net8.0\Furion.Extras.DependencyModel.CodeAnalysis.pdb
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DependencyModel.CodeAnalysis\obj\Debug\net8.0\ref\Furion.Extras.DependencyModel.CodeAnalysis.dll

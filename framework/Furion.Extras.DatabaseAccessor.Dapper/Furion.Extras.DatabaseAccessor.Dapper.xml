@@ -1,0 +1,583 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Furion.Extras.DatabaseAccessor.Dapper</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Extensions.DependencyInjection.DapperServiceCollectionExtensions">
+            <summary>
+            Dapper 拓展类
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.DapperServiceCollectionExtensions.AddDapper(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.String,System.Action)">
+            <summary>
+            添加 Dapper 拓展
+            </summary>
+            <param name="services"></param>
+            <param name="connectionString">连接字符串</param>
+            <param name="sqlProvider"> <see cref="T:Dapper.SqlProvider"/> 类型</param>
+            <param name="configure"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Dapper.SqlProvider">
+            <summary>
+            Sql 类型
+            </summary>
+        </member>
+        <member name="F:Dapper.SqlProvider.SqlServer">
+            <summary>
+            SqlServer 提供器程序集
+            </summary>
+        </member>
+        <member name="F:Dapper.SqlProvider.Sqlite">
+            <summary>
+            Sqlite 提供器程序集
+            </summary>
+        </member>
+        <member name="F:Dapper.SqlProvider.MySql">
+            <summary>
+            MySql 提供器程序集
+            </summary>
+        </member>
+        <member name="F:Dapper.SqlProvider.Npgsql">
+            <summary>
+            PostgreSQL 提供器程序集
+            </summary>
+        </member>
+        <member name="F:Dapper.SqlProvider.Oracle">
+            <summary>
+            Oracle 提供器程序集
+            </summary>
+        </member>
+        <member name="F:Dapper.SqlProvider.Firebird">
+            <summary>
+            Firebird 提供器程序集
+            </summary>
+        </member>
+        <member name="F:Dapper.SqlProvider.SqlProviderDbConnectionTypeCollection">
+            <summary>
+            数据库提供器连接对象类型集合
+            </summary>
+        </member>
+        <member name="M:Dapper.SqlProvider.#cctor">
+            <summary>
+            静态构造函数
+            </summary>
+        </member>
+        <member name="M:Dapper.SqlProvider.GetDbConnectionType(System.String)">
+            <summary>
+            获取数据库连接对象类型
+            </summary>
+            <param name="sqlProvider"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Dapper.DapperRepository">
+            <summary>
+            非泛型 Dapper 仓储
+            </summary>
+        </member>
+        <member name="F:Dapper.DapperRepository._db">
+            <summary>
+            数据库连接对象
+            </summary>
+        </member>
+        <member name="F:Dapper.DapperRepository._serviceProvider">
+            <summary>
+            服务提供器
+            </summary>
+        </member>
+        <member name="M:Dapper.DapperRepository.#ctor(System.IServiceProvider,System.Data.IDbConnection)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="serviceProvider"></param>
+            <param name="db"></param>
+        </member>
+        <member name="P:Dapper.DapperRepository.Context">
+            <summary>
+            连接上下文
+            </summary>
+        </member>
+        <member name="P:Dapper.DapperRepository.DynamicContext">
+            <summary>
+            动态连接上下文
+            </summary>
+        </member>
+        <member name="M:Dapper.DapperRepository.Query(System.String,System.Object,System.Data.IDbTransaction,System.Boolean,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <summary>
+            查询返回动态类型
+            </summary>
+            <param name="sql"></param>
+            <param name="param"></param>
+            <param name="transaction"></param>
+            <param name="buffered"></param>
+            <param name="commandTimeout"></param>
+            <param name="commandType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.DapperRepository.Query``1(System.String,System.Object,System.Data.IDbTransaction,System.Boolean,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <summary>
+            查询返回特定类型
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="sql"></param>
+            <param name="param"></param>
+            <param name="transaction"></param>
+            <param name="buffered"></param>
+            <param name="commandTimeout"></param>
+            <param name="commandType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.DapperRepository.QueryAsync(System.String,System.Object,System.Data.IDbTransaction,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <summary>
+            查询返回动态类型
+            </summary>
+            <param name="sql"></param>
+            <param name="param"></param>
+            <param name="transaction"></param>
+            <param name="commandTimeout"></param>
+            <param name="commandType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.DapperRepository.QueryAsync``1(System.String,System.Object,System.Data.IDbTransaction,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <summary>
+            查询返回特定类型
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="sql"></param>
+            <param name="param"></param>
+            <param name="transaction"></param>
+            <param name="commandTimeout"></param>
+            <param name="commandType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.DapperRepository.Execute(System.String,System.Object,System.Data.IDbTransaction,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <summary>
+            执行命令
+            </summary>
+            <param name="sql"></param>
+            <param name="param"></param>
+            <param name="transaction"></param>
+            <param name="commandTimeout"></param>
+            <param name="commandType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.DapperRepository.ExecuteAsync(System.String,System.Object,System.Data.IDbTransaction,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <summary>
+            执行命令
+            </summary>
+            <param name="sql"></param>
+            <param name="param"></param>
+            <param name="transaction"></param>
+            <param name="commandTimeout"></param>
+            <param name="commandType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.DapperRepository.Change``1">
+            <summary>
+            切换仓储
+            </summary>
+            <typeparam name="TEntity">实体类型</typeparam>
+            <returns>仓储</returns>
+        </member>
+        <member name="T:Dapper.DapperRepository`1">
+            <summary>
+            Dapper 仓储实现类
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+        </member>
+        <member name="M:Dapper.DapperRepository`1.#ctor(System.IServiceProvider,System.Data.IDbConnection)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="serviceProvider"></param>
+            <param name="db"></param>
+        </member>
+        <member name="M:Dapper.DapperRepository`1.Get(System.Object,System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            获取一条
+            </summary>
+            <param name="id"></param>
+            <param name="transaction"></param>
+            <param name="commandTimeout"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.DapperRepository`1.GetAsync(System.Object,System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            获取一条
+            </summary>
+            <param name="id"></param>
+            <param name="transaction"></param>
+            <param name="commandTimeout"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.DapperRepository`1.GetAll(System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            获取所有实体
+            </summary>
+            <param name="transaction"></param>
+            <param name="commandTimeout"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.DapperRepository`1.GetAllAsync(System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            获取所有实体
+            </summary>
+            <param name="transaction"></param>
+            <param name="commandTimeout"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.DapperRepository`1.Insert(`0,System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            新增一条
+            </summary>
+            <param name="entity"></param>
+            <param name="transaction"></param>
+            <param name="commandTimeout"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.DapperRepository`1.InsertAsync(`0,System.Data.IDbTransaction,System.Nullable{System.Int32},ISqlAdapter)">
+            <summary>
+            新增一条
+            </summary>
+            <param name="entity"></param>
+            <param name="transaction"></param>
+            <param name="commandTimeout"></param>
+            <param name="sqlAdapter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.DapperRepository`1.Insert(System.Collections.Generic.IEnumerable{`0},System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            新增多条
+            </summary>
+            <param name="entities"></param>
+            <param name="transaction"></param>
+            <param name="commandTimeout"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.DapperRepository`1.InsertAsync(System.Collections.Generic.IEnumerable{`0},System.Data.IDbTransaction,System.Nullable{System.Int32},ISqlAdapter)">
+            <summary>
+            新增多条
+            </summary>
+            <param name="entities"></param>
+            <param name="transaction"></param>
+            <param name="commandTimeout"></param>
+            <param name="sqlAdapter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.DapperRepository`1.Update(`0,System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            更新一条
+            </summary>
+            <param name="entity"></param>
+            <param name="transaction"></param>
+            <param name="commandTimeout"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.DapperRepository`1.UpdateAsync(`0,System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            更新一条
+            </summary>
+            <param name="entity"></param>
+            <param name="transaction"></param>
+            <param name="commandTimeout"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.DapperRepository`1.Update(System.Collections.Generic.IEnumerable{`0},System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            更新多条
+            </summary>
+            <param name="entities"></param>
+            <param name="transaction"></param>
+            <param name="commandTimeout"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.DapperRepository`1.UpdateAsync(System.Collections.Generic.IEnumerable{`0},System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            更新多条
+            </summary>
+            <param name="entities"></param>
+            <param name="transaction"></param>
+            <param name="commandTimeout"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.DapperRepository`1.Delete(`0,System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            删除一条
+            </summary>
+            <param name="entity"></param>
+            <param name="transaction"></param>
+            <param name="commandTimeout"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.DapperRepository`1.DeleteAsync(`0,System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            删除一条
+            </summary>
+            <param name="entity"></param>
+            <param name="transaction"></param>
+            <param name="commandTimeout"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.DapperRepository`1.Delete(System.Collections.Generic.IEnumerable{`0},System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            删除多条
+            </summary>
+            <param name="entities"></param>
+            <param name="transaction"></param>
+            <param name="commandTimeout"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.DapperRepository`1.DeleteAsync(System.Collections.Generic.IEnumerable{`0},System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            删除多条
+            </summary>
+            <param name="entities"></param>
+            <param name="transaction"></param>
+            <param name="commandTimeout"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Dapper.IDapperRepository">
+            <summary>
+            非泛型 Dapper 仓储
+            </summary>
+        </member>
+        <member name="P:Dapper.IDapperRepository.Context">
+            <summary>
+            连接上下文
+            </summary>
+        </member>
+        <member name="P:Dapper.IDapperRepository.DynamicContext">
+            <summary>
+            动态连接上下文
+            </summary>
+        </member>
+        <member name="M:Dapper.IDapperRepository.Query(System.String,System.Object,System.Data.IDbTransaction,System.Boolean,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <summary>
+            查询返回动态类型
+            </summary>
+            <param name="sql"></param>
+            <param name="param"></param>
+            <param name="transaction"></param>
+            <param name="buffered"></param>
+            <param name="commandTimeout"></param>
+            <param name="commandType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.IDapperRepository.Query``1(System.String,System.Object,System.Data.IDbTransaction,System.Boolean,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <summary>
+            查询返回特定类型
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="sql"></param>
+            <param name="param"></param>
+            <param name="transaction"></param>
+            <param name="buffered"></param>
+            <param name="commandTimeout"></param>
+            <param name="commandType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.IDapperRepository.QueryAsync(System.String,System.Object,System.Data.IDbTransaction,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <summary>
+            查询返回动态类型
+            </summary>
+            <param name="sql"></param>
+            <param name="param"></param>
+            <param name="transaction"></param>
+            <param name="commandTimeout"></param>
+            <param name="commandType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.IDapperRepository.QueryAsync``1(System.String,System.Object,System.Data.IDbTransaction,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <summary>
+            查询返回特定类型
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="sql"></param>
+            <param name="param"></param>
+            <param name="transaction"></param>
+            <param name="commandTimeout"></param>
+            <param name="commandType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.IDapperRepository.Execute(System.String,System.Object,System.Data.IDbTransaction,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <summary>
+            执行命令
+            </summary>
+            <param name="sql"></param>
+            <param name="param"></param>
+            <param name="transaction"></param>
+            <param name="commandTimeout"></param>
+            <param name="commandType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.IDapperRepository.ExecuteAsync(System.String,System.Object,System.Data.IDbTransaction,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <summary>
+            执行命令
+            </summary>
+            <param name="sql"></param>
+            <param name="param"></param>
+            <param name="transaction"></param>
+            <param name="commandTimeout"></param>
+            <param name="commandType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.IDapperRepository.Change``1">
+            <summary>
+            切换仓储
+            </summary>
+            <typeparam name="TEntity">实体类型</typeparam>
+            <returns>仓储</returns>
+        </member>
+        <member name="T:Dapper.IDapperRepository`1">
+            <summary>
+            Dapper 仓储接口定义
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+        </member>
+        <member name="M:Dapper.IDapperRepository`1.Get(System.Object,System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            获取一条
+            </summary>
+            <param name="id"></param>
+            <param name="transaction"></param>
+            <param name="commandTimeout"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.IDapperRepository`1.GetAsync(System.Object,System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            获取一条
+            </summary>
+            <param name="id"></param>
+            <param name="transaction"></param>
+            <param name="commandTimeout"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.IDapperRepository`1.GetAll(System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            获取所有实体
+            </summary>
+            <param name="transaction"></param>
+            <param name="commandTimeout"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.IDapperRepository`1.GetAllAsync(System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            获取所有实体
+            </summary>
+            <param name="transaction"></param>
+            <param name="commandTimeout"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.IDapperRepository`1.Insert(`0,System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            新增一条
+            </summary>
+            <param name="entity"></param>
+            <param name="transaction"></param>
+            <param name="commandTimeout"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.IDapperRepository`1.InsertAsync(`0,System.Data.IDbTransaction,System.Nullable{System.Int32},ISqlAdapter)">
+            <summary>
+            新增一条
+            </summary>
+            <param name="entity"></param>
+            <param name="transaction"></param>
+            <param name="commandTimeout"></param>
+            <param name="sqlAdapter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.IDapperRepository`1.Insert(System.Collections.Generic.IEnumerable{`0},System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            新增多条
+            </summary>
+            <param name="entities"></param>
+            <param name="transaction"></param>
+            <param name="commandTimeout"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.IDapperRepository`1.InsertAsync(System.Collections.Generic.IEnumerable{`0},System.Data.IDbTransaction,System.Nullable{System.Int32},ISqlAdapter)">
+            <summary>
+            新增多条
+            </summary>
+            <param name="entities"></param>
+            <param name="transaction"></param>
+            <param name="commandTimeout"></param>
+            <param name="sqlAdapter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.IDapperRepository`1.Update(`0,System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            更新一条
+            </summary>
+            <param name="entity"></param>
+            <param name="transaction"></param>
+            <param name="commandTimeout"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.IDapperRepository`1.UpdateAsync(`0,System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            更新一条
+            </summary>
+            <param name="entity"></param>
+            <param name="transaction"></param>
+            <param name="commandTimeout"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.IDapperRepository`1.Update(System.Collections.Generic.IEnumerable{`0},System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            更新多条
+            </summary>
+            <param name="entities"></param>
+            <param name="transaction"></param>
+            <param name="commandTimeout"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.IDapperRepository`1.UpdateAsync(System.Collections.Generic.IEnumerable{`0},System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            更新多条
+            </summary>
+            <param name="entities"></param>
+            <param name="transaction"></param>
+            <param name="commandTimeout"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.IDapperRepository`1.Delete(`0,System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            删除一条
+            </summary>
+            <param name="entity"></param>
+            <param name="transaction"></param>
+            <param name="commandTimeout"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.IDapperRepository`1.DeleteAsync(`0,System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            删除一条
+            </summary>
+            <param name="entity"></param>
+            <param name="transaction"></param>
+            <param name="commandTimeout"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.IDapperRepository`1.Delete(System.Collections.Generic.IEnumerable{`0},System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            删除多条
+            </summary>
+            <param name="entities"></param>
+            <param name="transaction"></param>
+            <param name="commandTimeout"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Dapper.IDapperRepository`1.DeleteAsync(System.Collections.Generic.IEnumerable{`0},System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            删除多条
+            </summary>
+            <param name="entities"></param>
+            <param name="transaction"></param>
+            <param name="commandTimeout"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

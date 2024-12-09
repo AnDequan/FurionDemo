@@ -1,0 +1,14 @@
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DatabaseAccessor.SqlSugar\bin\Debug\net8.0\Furion.Extras.DatabaseAccessor.SqlSugar.deps.json
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DatabaseAccessor.SqlSugar\bin\Debug\net8.0\Furion.Extras.DatabaseAccessor.SqlSugar.dll
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DatabaseAccessor.SqlSugar\bin\Debug\net8.0\Furion.Extras.DatabaseAccessor.SqlSugar.pdb
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DatabaseAccessor.SqlSugar\bin\Debug\net8.0\Furion.Extras.DatabaseAccessor.SqlSugar.xml
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DatabaseAccessor.SqlSugar\obj\Debug\net8.0\Furion.Extras.DatabaseAccessor.SqlSugar.csproj.AssemblyReference.cache
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DatabaseAccessor.SqlSugar\obj\Debug\net8.0\Furion.Extras.DatabaseAccessor.SqlSugar.GeneratedMSBuildEditorConfig.editorconfig
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DatabaseAccessor.SqlSugar\obj\Debug\net8.0\Furion.Extras.DatabaseAccessor.SqlSugar.AssemblyInfoInputs.cache
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DatabaseAccessor.SqlSugar\obj\Debug\net8.0\Furion.Extras.DatabaseAccessor.SqlSugar.AssemblyInfo.cs
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DatabaseAccessor.SqlSugar\obj\Debug\net8.0\Furion.Extras.DatabaseAccessor.SqlSugar.csproj.CoreCompileInputs.cache
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DatabaseAccessor.SqlSugar\obj\Debug\net8.0\Furion.Extras.DatabaseAccessor.SqlSugar.sourcelink.json
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DatabaseAccessor.SqlSugar\obj\Debug\net8.0\Furion.Extras.DatabaseAccessor.SqlSugar.dll
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DatabaseAccessor.SqlSugar\obj\Debug\net8.0\refint\Furion.Extras.DatabaseAccessor.SqlSugar.dll
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DatabaseAccessor.SqlSugar\obj\Debug\net8.0\Furion.Extras.DatabaseAccessor.SqlSugar.pdb
+D:\gitdemo\FurionDemo\framework\Furion.Extras.DatabaseAccessor.SqlSugar\obj\Debug\net8.0\ref\Furion.Extras.DatabaseAccessor.SqlSugar.dll

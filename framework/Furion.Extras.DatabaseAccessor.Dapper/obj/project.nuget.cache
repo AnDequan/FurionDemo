@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "bVhEdFVV2ck=",
+  "success": true,
+  "projectFilePath": "D:\\gitdemo\\FurionDemo\\framework\\Furion.Extras.DatabaseAccessor.Dapper\\Furion.Extras.DatabaseAccessor.Dapper.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\AnDequan\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
+    "C:\\Users\\AnDequan\\.nuget\\packages\\dapper.contrib\\2.0.78\\dapper.contrib.2.0.78.nupkg.sha512",
+    "C:\\Users\\AnDequan\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\AnDequan\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.0\\microsoft.extensions.dependencyinjection.abstractions.9.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

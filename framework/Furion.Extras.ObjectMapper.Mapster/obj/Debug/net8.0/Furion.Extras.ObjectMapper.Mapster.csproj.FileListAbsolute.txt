@@ -1,0 +1,14 @@
+D:\gitdemo\FurionDemo\framework\Furion.Extras.ObjectMapper.Mapster\bin\Debug\net8.0\Furion.Extras.ObjectMapper.Mapster.deps.json
+D:\gitdemo\FurionDemo\framework\Furion.Extras.ObjectMapper.Mapster\bin\Debug\net8.0\Furion.Extras.ObjectMapper.Mapster.dll
+D:\gitdemo\FurionDemo\framework\Furion.Extras.ObjectMapper.Mapster\bin\Debug\net8.0\Furion.Extras.ObjectMapper.Mapster.pdb
+D:\gitdemo\FurionDemo\framework\Furion.Extras.ObjectMapper.Mapster\bin\Debug\net8.0\Furion.Extras.ObjectMapper.Mapster.xml
+D:\gitdemo\FurionDemo\framework\Furion.Extras.ObjectMapper.Mapster\obj\Debug\net8.0\Furion.Extras.ObjectMapper.Mapster.csproj.AssemblyReference.cache
+D:\gitdemo\FurionDemo\framework\Furion.Extras.ObjectMapper.Mapster\obj\Debug\net8.0\Furion.Extras.ObjectMapper.Mapster.GeneratedMSBuildEditorConfig.editorconfig
+D:\gitdemo\FurionDemo\framework\Furion.Extras.ObjectMapper.Mapster\obj\Debug\net8.0\Furion.Extras.ObjectMapper.Mapster.AssemblyInfoInputs.cache
+D:\gitdemo\FurionDemo\framework\Furion.Extras.ObjectMapper.Mapster\obj\Debug\net8.0\Furion.Extras.ObjectMapper.Mapster.AssemblyInfo.cs
+D:\gitdemo\FurionDemo\framework\Furion.Extras.ObjectMapper.Mapster\obj\Debug\net8.0\Furion.Extras.ObjectMapper.Mapster.csproj.CoreCompileInputs.cache
+D:\gitdemo\FurionDemo\framework\Furion.Extras.ObjectMapper.Mapster\obj\Debug\net8.0\Furion.Extras.ObjectMapper.Mapster.sourcelink.json
+D:\gitdemo\FurionDemo\framework\Furion.Extras.ObjectMapper.Mapster\obj\Debug\net8.0\Furion.Extras.ObjectMapper.Mapster.dll
+D:\gitdemo\FurionDemo\framework\Furion.Extras.ObjectMapper.Mapster\obj\Debug\net8.0\refint\Furion.Extras.ObjectMapper.Mapster.dll
+D:\gitdemo\FurionDemo\framework\Furion.Extras.ObjectMapper.Mapster\obj\Debug\net8.0\Furion.Extras.ObjectMapper.Mapster.pdb
+D:\gitdemo\FurionDemo\framework\Furion.Extras.ObjectMapper.Mapster\obj\Debug\net8.0\ref\Furion.Extras.ObjectMapper.Mapster.dll
